@@ -1,0 +1,163 @@
+parcial 1 de programacion 2 
+ en la primera pestaña desarrolle una app que simule un cajero automatico
+ package calificación;
+
+import java.util.Scanner;
+private fragmentTabhost tabhost 
+setContentviem(R layout tabs
+tabhost=( fragment manager() android r..id   tabcontent)
+tabhost addtab(tabhost .newtabspe
+c("tab1) setIndicator( reloj
+tab3 class null
+
+
+public class CajaBancaria {
+
+    @SuppressWarnings("empty-statement")
+    public static void main(String[] args) {
+
+        Scanner leer = new Scanner(System.in);
+
+        int opcion = 0, depos = 0, retiro = 0, saldo = 0, saldoant = 0, ta = 0;
+        do {
+            System.out.println("1. Consultar saldo");
+            System.out.println("2. Realizar deposito");
+            System.out.println("3. Realizar retiro");
+            System.out.println("4. Consultar saldo anterior");
+            System.out.println("5. Compra de TA");
+            System.out.println("6. Salir");
+            System.out.println("Que oparación desea realizar: ");
+            opcion = leer.nextInt();
+
+            switch (opcion) {
+
+                case 1:
+                    System.out.println("Tu saldo es de:" + saldo + " pesos");
+                    break;
+
+                case 2:
+                    System.out.println("¿Cuanto deseas depositar?");
+                    depos = leer.nextInt();
+                    System.out.println("Deposito exitoso");
+                    saldo = saldo + depos;
+                    saldoant = saldo - depos;
+                    System.out.println("Saldo nuevo: " + saldo);
+                    System.out.println("Saldo anterior: " + saldoant);
+                    break;
+
+                case 3:
+                    System.out.println("¿Cuanto de sea retirar? ");
+                    retiro = leer.nextInt();
+
+                    if (saldo < retiro) {
+                        System.out.println("No puedes realizar retiro saldo insuficiente");
+                    } else {
+                        saldo = saldo - retiro;
+                        System.out.println("Retiro exitoso");
+
+                    }
+                    System.out.println("Tu saldo actual es: " + saldo);
+                    break;
+
+                case 4:
+                    System.out.println("¿Desea consultar saldo anterior?");
+                    System.out.println("Saldo anterior: " + saldo);
+                    break;
+
+                case 5:
+                    System.out.println("Compra de TA");
+                    System.out.println("¿Cuanto desea recargar de TA?");
+                    ta = leer.nextInt();
+                    if (saldo < ta) {
+                        System.out.println("No puedes realizar recarga de TA saldo insuficiente");
+                    } else {
+                        saldo = saldo - ta;
+                        System.out.println("Recarga exitosa");
+                    }
+                    System.out.println("Tu saldo actual es de: " + saldo);
+                    break;
+
+                case 6:
+                    System.out.println("Salir");
+                    break;
+
+                default:
+                    System.out.println("Número no válido...");
+            }
+
+            System.out.println("¿Qué desea hacer?");
+            System.out.println("1. Continuar");
+            System.out.println("2. Salir");
+            opcion = leer.nextInt();
+
+        } while (opcion == 1);
+        System.out.println("¿Qué desea hacer?");
+        System.out.println("1. Continuar");
+        System.out.println("2. Salir");
+        opcion = leer.nextInt();
+    }
+} Area= 1 Vara cuadra= 0 ,698896
+1 metro cuadra = 1 e-6
+1 tarea =628,86
+1 manzana = 0,69
+hectarea=1,0000
+acres=0.00024710
+
+
+4 en la segunda pestaña agregue el conversor de ARE ( superficie)
+
+<EditText
+   android:id="@+id/dato1"
+   android:layout_width=match_parent 
+   android:layout_height="wrap_content"
+   android:layout_marginleft=40dp"
+   android:layout_margintop"25dp
+   android:layout_marginRinght="40dp
+   android:ems="10
+   android:hint="@string/texto2"
+   android:inputype= "numbre
+    
+    <EditText
+    android:id="+id/datos"
+    android:layout_width=match_parent"
+   android:layout_marginleft=40dp"
+   android:layout_margintop"20dp
+   android:layout_marginRinght="40dp
+   android:ems="10
+   android:hint="@string/texto2"
+   android:inputype= "numbre
+    
+    <Button 
+    android:id="@+id/buton1"
+    android:layout_width="match_pared"
+    andoroid:layout_height="wrap_content"
+    android:layout_marginleft="50dp"
+    android:layout_margintop="40dp"
+     android:layout_margintop="40dp"    
+    android:fontfamily="sans-serif- black"
+    androic:textsize="24dp />
+    
+    EditText
+   android:id="@+id/resspuesta
+   android:layout_width=match_parent 
+   android:layout_height="wrap_content"
+   android:layout_marginleft=20dp"
+   android:layout_margintop"25dp
+   android:layout_marginRinght="10dp
+   android:ems="10
+   android:hint=@string/texto2"
+   android:inputType=numbre"
+   
+   1 metro cuadrado in tarea =0.00159033 m2
+10 metro cuadrado in tarea= 0.01590331 m2 
+50 metro cuadrado in tarea= 0.07951654 m2
+100 metro cuadrado in tarea= 0.15903308m2
+250 metro cuadrado in tarea=0.3975827 m2
+500 metro cuadrado in tarea = 0.79516539 m2
+10,000 metro cuadrado in tarea =15.90330789 m2
+ Area= 1 Vara cuadra= 0 ,698896
+1 metro cuadra = 10000
+1 tarea =628,8
+1 manzana =   7,025.7924 x 0.25= 1,756.4481
+hectarea=
+ 1acres= 4936.4
